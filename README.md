@@ -1,5 +1,15 @@
 # Full-Stack Course Overview
 
+
+
+## Class Slides:
+
+https://drive.google.com/drive/folders/1_WC-IRquHI4hI6qaDY18PFc5jD7Y3npP?usp=sharing
+
+### GITHUB REPO
+
+https://github.com/cwoolcott/cwoolcott.github.io
+
 Welcome to the Full-Stack Boot Camp! Some of the most important factors that influence how well and how quickly you learn something are not only how you structure and sequence your learning, but also how you stay motivated and curious about the material, and how you leverage your prior knowledge to build new knowledge you can apply in different situations. 
 
 Learning how to become a web developer is not easy. It will take a lot of internal drive and outside support. To make that journey a bit easier, the course curriculum is structured and sequenced to keep motivation high and connections between concepts clear. 
