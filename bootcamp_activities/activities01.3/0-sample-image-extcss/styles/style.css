@@ -1,0 +1,15 @@
+li {
+    font-size:36px
+}
+
+
+.sampleParagraph {
+    color: red;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#secondParagraph {
+    border: 1px solid black
+}
