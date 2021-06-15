@@ -11,9 +11,9 @@ body {
   display: flex;
   flex-direction: row;
   /* Centers along the main axis determined by flex-direction */
-  justify-content: center;
+  justify-content: space-evenly;
   /* Centers along the opposite axis */
-  align-items: center;
+  align-items: baseline;
   width: 90%;
   /* Uses the height of the viewport */
   height: 100vh;

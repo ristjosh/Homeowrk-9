@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            justify-content: space-around;
+        }
+
+
+        .cardOne {
+            border: 1px solid black;
+            flex: 2 0 100px;
+            height: 100px;
+            text-align: center;
+            color: white;
+            font-size: 36px
+        }
+
+        .card {
+            border: 1px solid black;
+            flex: 1 0 100px;
+            height: 100px;
+            text-align: center;
+            color: white;
+            font-size: 36px
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="cardOne" style="background-color: aqua;">1</div>
+        <div class="card" style="background-color: rgb(255, 0, 179);">2</div>
+        <div class="card" style="background-color: rgb(58, 255, 19);">3</div>
+        <div class="card" style="background-color: red;">4</div>
+
+    </section>
+</body>
+
+</html>
