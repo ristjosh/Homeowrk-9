@@ -15,8 +15,9 @@ button {
 
 /* The user's cursor is positioned over the element */
 button:hover {
-  background-color: #772014;
+  background-color: hsl(7, 71%, 27%);
   color: #fff;
+  cursor: pointer;
 }
 
 /* The user is actively pressing down on the element */
@@ -30,3 +31,42 @@ button:focus {
   outline: none;
   border-color: #8ac4ff;
 }
+
+.someOtherButtons {
+  width: 300px;
+  padding:10px;
+  margin: 0 auto;
+  border:1px solid blue;
+
+}
+.someOtherButtons a {
+  width:200px;
+  padding:10px;
+  border: 2px solid black;
+  display: none;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color:#000;
+  margin:10px;
+}
+
+.someOtherButtons:hover a{
+  display: block;
+  background-color: aquamarine;
+  color:blue
+}
+
+.someOtherButtons a:focus{
+
+  background-color: rgb(194, 0, 146);
+  color:yellow
+}
+
+.someOtherButtons a:active{
+
+  background-color: rgb(0, 17, 255);
+  color:rgb(170, 0, 255)
+}
+
+

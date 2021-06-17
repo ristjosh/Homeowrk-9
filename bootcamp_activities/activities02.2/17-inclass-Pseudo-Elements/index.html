@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            position: relative;
+        }
+
+        li:hover::after {
+
+            /* font-family: Impact; */
+            content: attr(data-desc);
+            background-color: white;
+            left: 0;
+            bottom: 20px;
+            position: absolute;
+            min-width: 200px;
+            border: 1px solid black;
+            padding: 1%;
+            color: gray;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Whole Foods List</h3>
+    <ul>
+        <li data-desc="This comes from a Farm">Get Milk</li>
+        <li data-desc="This comes from a Goat">Get Cheese</li>
+        <li data-desc="Its Cold">Get Ice Cream</li>
+        <li data-desc="Its Hot">Get Pizza</li>
+        <li data-desc="Its Not Diary">Almond Juice</li>
+    </ul>
+</body>
+
+</html>

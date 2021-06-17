@@ -19,7 +19,7 @@ h1 {
 
 h2 {
   margin: 2% 0;
-  font-size: 180%;
+  font-size: 250%;
 }
 
 nav ul {
@@ -29,7 +29,7 @@ nav ul {
 }
 
 nav a {
-  color: #b9c6ae;
+  color: #b9C6ae;
   font-weight: bold;
   text-decoration: none;
 }
@@ -59,29 +59,11 @@ article p {
   font-size: 110%;
 }
 
-/* TODO: Style the keyword - underline, black text, grab cursor */
-span{
-  position: relative;
-  text-decoration: underline;
-  color: #000;
-  cursor: grab;
+article ul {
+  margin-left: 5%;
+  font-size: 110%;
+  list-style: circle;
 }
-
-span:hover::after{
-  content: attr(data-descr);
-  position: absolute;
-  left:0;
-  bottom: 24px;
-  min-width:200px;
-  border: 1px solid black;
-  background-color: #85c4ff;
-  padding: 12px;
-  font-size: 80%;
-  z-index: 1;
-
-}
-
-/* TODO: Position tooltip above the keyword, same color as header and nav links, no border-radius, smaller font size */
 
 aside {
   width: 25%;
@@ -91,8 +73,7 @@ aside h2 {
   font-size: 150%;
 }
 
-input,
-button {
+input, button {
   width: 100%;
   margin: 2% 0;
   padding: 1%;
@@ -106,11 +87,13 @@ footer {
   color: #fff;
 }
 
+/* Hide the resource links by default */
 .resources .links {
   display: none;
   padding: 1% 0;
 }
 
+/* Display the links when the parent is in a hover state */
 .resources:hover .links {
   display: block;
 }
@@ -129,8 +112,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header,
-  main {
+  header, main {
     flex-direction: column;
   }
 
