@@ -20,6 +20,7 @@
   </style>
 
 <body>
+
   <input type="text" id="textbox">
   <button style="background-color: #4583D1; cursor: pointer;" onclick="startCount()">Start count!</button>
   <button style="background-color: #C24C4C" onclick="stopCount()">Stop count!</button>
@@ -29,7 +30,7 @@
   <script>
     var c = 0;
     var t;
-    var timer_is_on = 0;
+    var timer_is_on = false;
 
     //This just Loops; is there a better function?
     function timedCount() {
@@ -41,7 +42,7 @@
     //Start Counting
     function startCount() {
       if (!timer_is_on) {
-        timer_is_on = 1;
+        timer_is_on = true;
         timedCount();
       }
     }
@@ -49,7 +50,7 @@
     //Stop Counting
     function stopCount() {
       clearTimeout(t);
-      timer_is_on = 0;
+      timer_is_on = false;
     }
 
     //Reset. Counter
