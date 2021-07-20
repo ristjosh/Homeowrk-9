@@ -6,11 +6,14 @@ fetch(requestUrl)
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    // console.log(data);
   });
 
 fetch(badRequestUrl)
   .then(function (response) {
+    if (response.status == "404") {
+      return "HEY CAN'T FIND THIS";
+    }
     return response.json();
   })
   .then(function (data) {
