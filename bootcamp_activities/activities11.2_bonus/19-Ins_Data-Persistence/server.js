@@ -64,12 +64,12 @@ app.post('/api/reviews', (req, res) => {
     const reviewString = JSON.stringify(newReview);
 
     // Write the string to a file
-    fs.writeFile(`./db/${newReview.product}.json`, reviewString, (err) =>
+    fs.appendFile(`./db/products.json`, reviewString, (err) =>
       err
         ? console.error(err)
         : console.log(
-            `Review for ${newReview.product} has been written to JSON file`
-          )
+          `Review for ${newReview.product} has been written to JSON file`
+        )
     );
 
     const response = {

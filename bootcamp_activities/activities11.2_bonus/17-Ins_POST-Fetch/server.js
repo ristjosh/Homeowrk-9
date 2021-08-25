@@ -7,6 +7,7 @@ const PORT = 3001;
 
 const app = express();
 
+//Post Object into JSON
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -26,6 +27,7 @@ app.get('/api/reviews', (req, res) => {
 });
 
 // GET request for a single review
+//localhost:3001/api/reviews/345 (req.params.review_id = 345)
 app.get('/api/reviews/:review_id', (req, res) => {
   if (req.body && req.params.review_id && req.body.upvote) {
     console.info(`${req.method} request received to get a single a review`);
